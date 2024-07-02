@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a name="readme-top"></a>
 
-## Getting Started
+<!-- PROJECT LOGO -->
+<p align="center">
+  <img src="public/magician.png" alt="project logo" height=250px width=180px aspect-ratio="1 / 1" align="center" />
+</p>
 
-First, run the development server:
+<!-- PROJECT OVERVIEW -->
+<br />
+  <h3 align="center">CaseMagician</h3>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  <p align="center">
+      Design your very own phone case with any image.
+    <br/>
+  </p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#screenshots">Screenshots</a></li>
+  </ol>
+</details>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<!-- ABOUT THE PROJECT -->
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## About The Project
 
-## Learn More
+<b>Link to live demo: (project still under development)</b>
 
-To learn more about Next.js, take a look at the following resources:
+<p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- BUILT WITH -->
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Built With
 
-## Deploy on Vercel
+<!-- * [![React][React]][React-url] -->
+<!-- * [![React-router][React-router]][React-router-url] -->
+<!-- * [![JavaScript][JavaScript]][JavaScript-url] -->
+<!-- * ![CSS][CSS] -->
+<!-- * [![Sass][Sass]][Sass-url] -->
+<!-- * ![HTML5][HTML5] -->
+<!-- * [![Vite][Vite]][Vite-url] -->
+<!-- * [![Firebase][Firebase]][Firebase-url] -->
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<!-- Screenshots -->
+
+## Screenshots
+
+<!-- <img src="" alt="" width="1200"/> -->
+<!-- <img src="" alt="" width="300"/> -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Attributions -->
+
+## Attributions
+
+<a href="https://www.vecteezy.com/free-png/cartoon-style">Magic Pot Image</a>
+<a href="https://www.pngegg.com/en/png-nbckl">Magician Image</a>
+<a href="https://pngimg.com/image/73744">Magician Hat and Hand Image</a>
+
+<!-- MARKDOWN LINKS -->
+
+[React]: https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
+[React-url]: https://react.dev
+[React-router]: https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
+[React-router-url]: https://reactrouter.com/en/main
+[JavaScript]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
+[JavaScript-url]: https://www.javascript.com
+[CSS]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white
+[Sass]: https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white
+[Sass-url]: https://sass-lang.com
+[HTML5]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
+[Vite]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
+[Vite-url]: https://vitejs.dev
+[Firebase]: https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white
+[Firebase-url]: https://firebase.google.com
