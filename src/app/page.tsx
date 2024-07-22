@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Phone from "@/components/Phone";
 import { Check, Star } from "lucide-react";
 
 export default function Home() {
@@ -9,18 +10,20 @@ export default function Home() {
         <MaxWidthWrapper className="pb-24 pt-10 sm:pb-32 lg:pt-24 lg:pb-52 lg:grid lg:grid-cols-3 lg:gap-x-0 xl:gap-x-8 xl:pt-32">
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center flex flex-col items-center lg:items-start lg:text-left">
-              <div className="absolute w-28 left-0 -top-20 hidden lg:block">
+              <div className="absolute w-28 left-0 -top-28 hidden lg:block">
                 <img
                   src="/magician.png"
                   alt="Magician logo"
                   className="w-full"
                 />
               </div>
+
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
                 Your Phone Case,{" "}
                 <span className="px-2 text-red-600">Magically</span> brought to
                 life
               </h1>
+
               <p className="mt-8 text-lg text-balance max-w-prose text-center md:text-wrap lg:text-left lg:pr-10">
                 With the wave of a wand,{" "}
                 <span className="font-semibold">&quot;Abracasedabra&quot;</span>
@@ -32,10 +35,12 @@ export default function Home() {
                   <Check className="h-5 w-5 shrink-0 text-red-600" />
                   High-quality, durable material
                 </li>
+
                 <li className="flex gap-1.5 items-center text-left">
                   <Check className="h-5 w-5 shrink-0 text-red-600" />5 year
                   print guarantee
                 </li>
+
                 <li className="flex gap-1.5 items-center text-left">
                   <Check className="h-5 w-5 shrink-0 text-red-600" />
                   Modern iPhone models supported
@@ -49,21 +54,25 @@ export default function Home() {
                     alt="user image"
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
                   />
+
                   <img
                     src="/users/user-2.png"
                     alt="user image"
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
                   />
+
                   <img
                     src="/users/user-3.png"
                     alt="user image"
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
                   />
+
                   <img
                     src="/users/user-4.jpg"
                     alt="user image"
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
                   />
+
                   <img
                     src="/users/user-5.jpg"
                     alt="user image"
@@ -86,6 +95,22 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="col-span-full lg:col-span-1 w-full h-fit flex justify-center px-8 sm:px-16 md:px-0 mt-32 lg:mx-0 lg:mt-20">
+            <div className="relative md:max-w-xl">
+              <img
+                src="/your-image.png"
+                alt="your image arrow"
+                className="absolute w-40 lg:w-52 left-64 top-10 select-none hidden sm:block lg:hidden xl:block"
+              />
+              <img
+                src="/line.png"
+                alt="line"
+                className="absolute w-20 -left-6 -bottom-6 select-none"
+              />
+              <Phone className="w-64" imgSrc="/testimonials/1.jpg" />
             </div>
           </div>
         </MaxWidthWrapper>
