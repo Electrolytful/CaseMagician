@@ -20,7 +20,7 @@ export default function Home() {
 
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
                 Your Phone Case,{" "}
-                <span className="px-2 text-red-600">Magically</span> brought to
+                <span className="px-2 text-rose-600">Magically</span> brought to
                 life
               </h1>
 
