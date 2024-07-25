@@ -2,6 +2,8 @@
 import { cn } from "@/lib/utils";
 import { HTMLAttributes } from "react";
 
+// custom type to apply to component
+// HTMLAttributes extension allowing component to be passed div element functions
 interface PhoneProps extends HTMLAttributes<HTMLDivElement> {
   imgSrc: string;
   dark?: boolean;
@@ -23,6 +25,7 @@ export default function Phone({
     >
       <img
         src={
+          // if dark mode is enabled for component use the dark edges template, else use white edges
           dark
             ? "/phone-template-dark-edges.png"
             : "/phone-template-white-edges.png"

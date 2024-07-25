@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 
+// custom component to wrap and keep content at a consistent size
 export default function MaxWidthWrapper({
   className,
   children,

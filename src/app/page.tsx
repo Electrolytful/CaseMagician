@@ -7,9 +7,12 @@ export default function Home() {
   return (
     <div className="bg-slate-50">
       <section>
+        {/* enclose content in MaxWidthWrapper component to keep page sizing consistent */}
         <MaxWidthWrapper className="pb-24 pt-10 sm:pb-32 lg:pt-24 lg:pb-52 lg:grid lg:grid-cols-3 lg:gap-x-0 xl:gap-x-8 xl:pt-32">
+          {/* left area of landing page showcasing the slogan and reviews */}
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center flex flex-col items-center lg:items-start lg:text-left">
+              {/* casemagician logo */}
               <div className="absolute w-28 left-0 -top-28 hidden lg:block">
                 <img
                   src="/magician.png"
@@ -18,6 +21,7 @@ export default function Home() {
                 />
               </div>
 
+              {/* title of landing page */}
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
                 Your Phone Case,{" "}
                 <span className="px-2 text-rose-600">Magically</span> brought to
@@ -47,6 +51,7 @@ export default function Home() {
                 </li>
               </ul>
 
+              {/* user reviews section */}
               <div className="mt-12 flex flex-col items-center gap-5 sm:flex-row sm:items-start">
                 <div className="flex -space-x-4">
                   <img
@@ -98,6 +103,7 @@ export default function Home() {
             </div>
           </div>
 
+          {/* right area of landing page showcasing an example product */}
           <div className="col-span-full lg:col-span-1 w-full h-fit flex justify-center px-8 sm:px-16 md:px-0 mt-32 lg:mx-0 lg:mt-20">
             <div className="relative md:max-w-xl">
               <img

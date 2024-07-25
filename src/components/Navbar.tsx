@@ -1,10 +1,16 @@
 import Link from "next/link";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { buttonVariants } from "./ui/button";
+import { cn } from "@/lib/utils";
+import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 
-export default function Navbar() {
-  const user = undefined;
-  const isAdmin = false;
+export default async function Navbar() {
+  // function imported from kinde to get the current user if they are logged in
+  const { getUser } = getKindeServerSession();
+  const user = await getUser();
+
+  // check to see if the user is an admin
+  const isAdmin = user?.email === process.env.ADMIN_EMAIL;
 
   return (
     <nav className="sticky z-[100] h-14 w-full inset-x-0 top-0 border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
@@ -15,6 +21,7 @@ export default function Navbar() {
           </Link>
 
           <div className="h-full flex items-center space-x-4">
+            {/* if the user is logged in display the logout and create case buttons, if they are an admin additionally display dashboard  button, otherwise display the sign up and login buttons */}
             {user ? (
               <>
                 <Link
@@ -29,10 +36,13 @@ export default function Navbar() {
                 {isAdmin ? (
                   <Link
                     href="/api/auth/logout"
-                    className={buttonVariants({
-                      size: "sm",
-                      variant: "ghost",
-                    })}
+                    className={cn(
+                      buttonVariants({
+                        size: "sm",
+                        variant: "ghost",
+                      }),
+                      "text-rose-600"
+                    )}
                   >
                     Dashboard
                   </Link>
@@ -51,10 +61,13 @@ export default function Navbar() {
               <>
                 <Link
                   href="/api/auth/register"
-                  className={buttonVariants({
-                    size: "sm",
-                    variant: "ghost",
-                  })}
+                  className={cn(
+                    buttonVariants({
+                      size: "sm",
+                      variant: "ghost",
+                    }),
+                    "text-rose-600"
+                  )}
                 >
                   Sign up
                 </Link>
