@@ -1,13 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Phone from "@/components/Phone";
-import { Check, Star } from "lucide-react";
+import UserReview from "@/components/UserReview";
+import UserReviews from "@/components/UserReviews";
+import CheckList from "@/components/CheckList";
+import { Icons } from "@/components/Icons";
 
 export default function Home() {
   return (
     <div className="bg-slate-50">
+      {/* hero section */}
       <section>
-        {/* enclose content in MaxWidthWrapper component to keep page sizing consistent */}
+        {/* enclose content in MaxWidthWrapper component to give section a consistent size */}
         <MaxWidthWrapper className="pb-24 pt-10 sm:pb-32 lg:pt-24 lg:pb-52 lg:grid lg:grid-cols-3 lg:gap-x-0 xl:gap-x-8 xl:pt-32">
           {/* left area of landing page showcasing the slogan and reviews */}
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
@@ -28,78 +32,32 @@ export default function Home() {
                 life
               </h1>
 
+              {/* a little slogan */}
               <p className="mt-8 text-lg text-balance max-w-prose text-center md:text-wrap lg:text-left lg:pr-10">
                 With the wave of a wand,{" "}
                 <span className="font-semibold">&quot;Abracasedabra&quot;</span>
                 , transform your images into the case of your dreams!
               </p>
 
-              <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
-                <li className="flex gap-1.5 items-center text-left">
-                  <Check className="h-5 w-5 shrink-0 text-red-600" />
-                  High-quality, durable material
-                </li>
+              <CheckList
+                checkArray={[
+                  "High-quality, durable material",
+                  "5 year print guarantee",
+                  "Modern iPhone models supported",
+                ]}
+              />
 
-                <li className="flex gap-1.5 items-center text-left">
-                  <Check className="h-5 w-5 shrink-0 text-red-600" />5 year
-                  print guarantee
-                </li>
-
-                <li className="flex gap-1.5 items-center text-left">
-                  <Check className="h-5 w-5 shrink-0 text-red-600" />
-                  Modern iPhone models supported
-                </li>
-              </ul>
-
-              {/* user reviews section */}
-              <div className="mt-12 flex flex-col items-center gap-5 sm:flex-row sm:items-start">
-                <div className="flex -space-x-4">
-                  <img
-                    src="/users/user-1.png"
-                    alt="user image"
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
-                  />
-
-                  <img
-                    src="/users/user-2.png"
-                    alt="user image"
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
-                  />
-
-                  <img
-                    src="/users/user-3.png"
-                    alt="user image"
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
-                  />
-
-                  <img
-                    src="/users/user-4.jpg"
-                    alt="user image"
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
-                  />
-
-                  <img
-                    src="/users/user-5.jpg"
-                    alt="user image"
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100 object-cover"
-                  />
-                </div>
-
-                <div className="flex flex-col justify-between items-center sm:items-start">
-                  <div className="flex gap-0.5">
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                  </div>
-
-                  <p>
-                    <span className="font-semibold">1,250</span> Positive
-                    Reviews
-                  </p>
-                </div>
-              </div>
+              <UserReviews
+                userImages={[
+                  "/users/user-1.png",
+                  "/users/user-2.png",
+                  "/users/user-3.png",
+                  "/users/user-4.jpg",
+                  "/users/user-5.jpg",
+                ]}
+                userReviews={1250}
+                stars={5}
+              />
             </div>
           </div>
 
@@ -120,6 +78,52 @@ export default function Home() {
             </div>
           </div>
         </MaxWidthWrapper>
+      </section>
+
+      {/* value showcase section */}
+      <section className="bg-slate-100 py-24">
+        <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
+          <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
+            <h2 className="order-1 mt-2 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900">
+              What our{" "}
+              <span className="relative px-2">
+                customers{" "}
+                <Icons.underline className="hidden sm:block pointer-events-none absolute inset-x-0 -bottom-7 text-rose-500" />
+              </span>{" "}
+              say
+            </h2>
+            <img
+              src="/magician.png"
+              alt="casemagician logo"
+              className="w-24 order-0 lg:order-2"
+            />
+          </div>
+
+          <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 gap-y-16">
+            <UserReview imgSrc="/users/user-1.png" name="Jonathan">
+              &ldquo; Absolutely love this phone case! It&apos;s sleek, stylish,
+              and provides excellent protection without being bulky. The
+              material feels high-quality and has a nice grip, so I&apos;m not
+              worried about accidental drops. Had the case for two and a half
+              months and the{" "}
+              <span className="p-0.5 text-rose-600">
+                image is still super clear
+              </span>
+              .&rdquo;
+            </UserReview>
+            <UserReview imgSrc="/users/user-4.jpg" name="Evan">
+              &ldquo; I always keep my phone together with keys in my pocket,
+              leading to some horrible scratch marks on previous cases. Alas,
+              this phone case has not suffered a single terrible scratch yet.{" "}
+              <span className="p-0.5 text-rose-600">
+                Looks brand new even after a year
+              </span>
+              . Amazing! &rdquo;
+            </UserReview>
+          </div>
+        </MaxWidthWrapper>
+
+        {/* animated phone case section */}
       </section>
     </div>
   );

@@ -1,13 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { cn } from "@/lib/utils";
-import { HTMLAttributes } from "react";
-
-// custom type to apply to component
-// HTMLAttributes extension allowing component to be passed div element functions
-interface PhoneProps extends HTMLAttributes<HTMLDivElement> {
-  imgSrc: string;
-  dark?: boolean;
-}
+import { type PhoneProps } from "@/lib/types";
 
 export default function Phone({
   imgSrc,
