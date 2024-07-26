@@ -60,9 +60,11 @@
 
 ## Attributions
 
-<a href="https://www.vecteezy.com/free-png/cartoon-style">Magic Pot Image</a>
-<a href="https://www.pngegg.com/en/png-nbckl">Magician Image</a>
-<a href="https://pngimg.com/image/73744">Magician Hat and Hand Image</a>
+<ul>
+  <li><a href="https://www.vecteezy.com/free-png/cartoon-style">Magic Pot Image</a></li>
+  <li><a href="https://www.pngegg.com/en/png-nbckl">Magician Image</a></li>
+  <li><a href="https://pngimg.com/image/73744">Magician Hat and Hand Image</a></li>
+</ul>
 
 <!-- MARKDOWN LINKS -->
 
