@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Phone from "@/components/Phone";
-import UserReview from "@/components/UserReview";
-import UserReviews from "@/components/UserReviews";
-import CheckList from "@/components/CheckList";
-import { Icons } from "@/components/Icons";
+import {
+  MaxWidthWrapper,
+  CheckList,
+  UserReview,
+  UserReviews,
+  Icons,
+  Phone,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -124,6 +126,9 @@ export default function Home() {
         </MaxWidthWrapper>
 
         {/* animated phone case section */}
+        <div className="pt-16">
+          {/* <Reviews /> */}
+        </div>
       </section>
     </div>
   );

@@ -6,6 +6,10 @@ export interface PhoneProps extends HTMLAttributes<HTMLDivElement> {
   dark?: boolean;
 }
 
+export interface ReviewProps extends HTMLAttributes<HTMLDivElement> {
+  imgSrc: string;
+}
+
 export interface UserReview {
   children: React.ReactNode;
   imgSrc: string;
@@ -21,4 +25,11 @@ export interface UserReviews {
 
 export interface CheckList {
   checkArray: string[];
+}
+
+export interface ReviewCol {
+  reviews: string[];
+  className?: string;
+  reviewClassName?: (reviewIndex: number) => string;
+  msPerPixel?: number;
 }
